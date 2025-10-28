@@ -1,0 +1,12 @@
+/*style.css*/
+button {
+    background-color: navy;
+    color: white;
+    height: 30px;
+    border-radius: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
