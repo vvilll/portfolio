@@ -1,4 +1,4 @@
-/*style.css*/
+
 *{
     margin: 0px;
     padding: 0px;
@@ -121,7 +121,7 @@ body {
 }
 
 .previewAbout, .previewContact{
-    width: 50%;
+    width: 40%;
     height: 300px;
     margin-right: 5%;
     padding-top: 1%;
