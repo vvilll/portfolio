@@ -8,13 +8,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> JavaScript</title>
     <link rel="stylesheet" href="CSS/style.css">
-</head>
-
-<body>
-    <h1> JavaScript Tutorial</h1>
-    <p>Welcome to my website with JavaScript.</p>
-    <button class="my-btn" id="btn-1" onclick="addParagraph()">ADD</button>
-    <button class="my-btn" id="btn-2" onclick="removeParagraph()">REMOVE</button>
-    <div class="container"></div>
     <script src="JS/buttonScript.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cactus+Classical+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navHeader">
+        <ul>
+            <li>
+                <a href="index.html">
+                    Home
+                </a>  
+            </li>
+            <li>
+                <a href="projects.html">
+                    Projects
+                </a>    
+            </li>                         
+        </ul>
+    </nav>
+    <div class="projectPanel">
+        <h1>
+            Projects
+        </h1>
+        <div class="projectPreview">
+            <button class="projButton" id="pButtonLeft" onclick="rotateImage(0)">&lt</button>
+            <img id="projImage" src="images/huntingSeasonProj.jpg" alt="developer">
+            <button class="projButton" id="pButtonRight" onclick="rotateImage(1)">&gt</button>
+        </div>
+        <a href="https://github.com/vvilll">
+            <img id="gitImage" src="images/github-mark.png" alt="developer" height="50px" width="px">
+        </a>
+        <div class="controlPanel">
+            <button class="controlButton left" onclick="changeImg(0)"></button>
+            <button class="controlButton center" onclick="changeImg(1)"></button>
+            <button class="controlButton right" onclick="changeImg(2)"></button>
+        </div>
+    </div>  
+    <div class="infoPreview">
+        <div class="previewAbout">
+            <h1>
+                About Me
+            </h1>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro vitae, commodi consectetur unde atque, pariatur velit eveniet hic nemo molestiae facere! Expedita ducimus sit inventore qui cum repellat quibusdam error.
+            </p>
+        </div>
+        <div class="previewContact">
+            <h1>
+                Contact
+            </h1>
+            <p>Email: Lorem ipsum</p>
+            <p>Linkedin: dolor sit amet </p>
+            <p>Github: consectetur adipisicing elit.</p> 
+        </div>
+    </div>
 </body>
