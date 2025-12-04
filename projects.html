@@ -7,80 +7,74 @@
     <!-- displays site properly based on user's device -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> JavaScript</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/projectStyle.css">
     <script src="JS/buttonScript.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cactus+Classical+Serif&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navHeader">
-        <ul>
-            <li>
-                <a href="index.html">
-                    Home
-                </a>  
-            </li>
-            <li>
-                <a href="about.html">
-                    About Me / Contact
-                </a>  
-            </li>
-            <li>
-                <a href="projects.html">
-                    Projects
-                </a>    
-            </li>                   
-        </ul>
-    </nav>
-    <h1 id="projHeader">
-        Projects
-    </h1>
+    <div class="projPageHead">
+        <h1>
+            Project Show Case
+        </h1>
+        <a href="index.html">
+            Home
+        </a>
+        <a href="projects.html">
+            Projects
+        </a>  
+    </div>
+ 
     <div class="projItems">
-        <div class="projRow 1">
-            <div class = "projContainer">
-                <img id="projItem" src="images/placeholderImage.png" alt="developer">
-                <div class = "projDescription">
-                    <h2>Hunting Season</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi aperiam dicta deserunt ratione aliquid veritatis sed debitis doloremque obcaecati itaque! At itaque corporis dolorem assumenda esse aut asperiores pariatur officia?</p>
-                </div>
+        <div class = "projContainer">
+            <img id="projItem" src="images/huntingSeasonProj.jpg" alt="developer">
+            <div class = "projDescription">
+                <h2>Hunting Season</h2>
+                <p>A group coding project in which we created a top down survival game in c++ sfml based on the online game moomoo with rouguelike elements.</p>
+                <a href="https://github.com/Narwhale14/ShooterGame">Learn More</a>
             </div>
-            <div class = "projContainer">
-                <img id="projItem" src="images/placeholderImage.png" alt="developer">
-                <div class = "projDescription">
-                    <h2>Stegonography</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi aperiam dicta deserunt ratione aliquid veritatis sed debitis doloremque obcaecati itaque! At itaque corporis dolorem assumenda esse aut asperiores pariatur officia?</p>
-                </div>
+            
+        </div>
+        <div class = "projContainer">
+            <img id="projItem" src="images/stegoProj.jpg" alt="developer">
+            <div class = "projDescription">
+                <h2>Stegonography</h2>
+                <p>A C++ stegonography program that accepts user input and hides the message into a bmp image.</p>
+                <a href="https://github.com/vvilll/stego-PA4">Learn More</a>
             </div>
         </div>
-        <div class="projRow 2">
-            <div class = "projContainer">
-                <img id="projItem" src="images/placeholderImage.png" alt="developer">
-                <div class = "projDescription">
-                    <h2></h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi aperiam dicta deserunt ratione aliquid veritatis sed debitis doloremque obcaecati itaque! At itaque corporis dolorem assumenda esse aut asperiores pariatur officia?</p>
-                </div>
-            </div>
-            <div class = "projContainer">
-                <img id="projItem" src="images/placeholderImage.png" alt="developer">
-                <div class = "projDescription">
-                    <h2>Project 1</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi aperiam dicta deserunt ratione aliquid veritatis sed debitis doloremque obcaecati itaque! At itaque corporis dolorem assumenda esse aut asperiores pariatur officia?</p>
-                </div>
+        <div class = "projContainer">
+            <img id="projItem" src="images/assemblyProj.jpg" alt="developer">
+            <div class = "projDescription">
+                <h2>Assembly Adventure</h2>
+                <p>LC-3 assmebly choice based adventure game where the user is given differetn options that will take them down a variety of paths. The project incorporates ascii style art and animations.</p>
+                <a href="https://github.com/vvilll/CS-155-Final-Project">Learn More</a>
             </div>
         </div>
-        <div class="projRow 3">
-            <div class = "projContainer">
-                <img id="projItem" src="images/placeholderImage.png" alt="developer">
-                <div class = "projDescription">
-                    <h2>Project 1</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi aperiam dicta deserunt ratione aliquid veritatis sed debitis doloremque obcaecati itaque! At itaque corporis dolorem assumenda esse aut asperiores pariatur officia?</p>
-                </div>
+        <div class = "projContainer">
+            <img id="projItem" src="images/servClientProj.jpg" alt="developer">
+            <div class = "projDescription">
+                <h2>Client and Server</h2>
+                <p>A C based program in which a client and a server communicate using sockets to play a game of tictactoe.</p>
+                <a href="https://github.com/vvilll/servClient-PA8">Learn More</a>
             </div>
-            <div class = "projContainer">
-                <img id="projItem" src="images/placeholderImage.png" alt="developer">
-                <div class = "projDescription">
-                    <h2>Project 1</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi aperiam dicta deserunt ratione aliquid veritatis sed debitis doloremque obcaecati itaque! At itaque corporis dolorem assumenda esse aut asperiores pariatur officia?</p>
-                </div>
+        </div>
+        <div class = "projContainer">
+            <img id="projItem" src="images/pythonScrap.jpg" alt="developer">
+            <div class = "projDescription">
+                <h2>Python Scrapper</h2>
+                <p>Python web scrapper that a user can input a stock symbol from the world indicies. The scrapper will then gather the stock price from yahoo stocks and update a local file with the most recent price.</p>
+                <a href="https://github.com/vvilll/pythonScrape">Learn More</a>
+            </div>
+        </div>
+        <div class = "projContainer">
+            <img id="projItem" src="images/buffOverflowProj.jpg" alt="developer">
+            <div class = "projDescription">
+                <h2>Buffer Overflow</h2>
+                <p>A exercise and write up on the exploitation of a C program that contains a buffer overflow vulnerabilty.</p>
+                <a href="">Learn More</a>
             </div>
         </div>
     </div>

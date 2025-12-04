@@ -10,22 +10,32 @@ body {
     background-color: #fafafa;
 }
 
-.navHeader ul{
+.projectHeader{
+    border-bottom: solid #252525;
+    margin-bottom: 1%;
+}
+
+.projectLinks{
+    padding-top: 5%;
+    align-self: center;
+}
+
+.projectHeader ul{
     height: 40px;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
     list-style-type: none;
 }
 
-.navHeader a{
-    padding: 50px 50px;
+.projectHeader a{
+    padding: 10px 50px;
     color: #252525;
     text-decoration: none;
     padding-bottom: 10px;
+    font-size: x-large;
 }
 
-.navHeader a:hover{
+
+.projectHeader a:hover{
     color: #7b7b7b;
     text-decoration: underline;
 }
@@ -38,12 +48,17 @@ body {
     padding: 1%;
 }
 
+.projectHeader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .projectPanel h1{
-    margin-bottom: 2%;
     margin-top: 0px;
     font-size: 500%;
     font-family: "Bodoni Moda SC", serif;
-    border-bottom: solid #252525;
+
 }
 
 .projectPreview{
@@ -109,7 +124,9 @@ body {
     width: 50%;
     height: 300px;
     margin-right: 5%;
+    padding-top: 1%;
     padding-left: 1%;
+    padding-right: 2%;
     border-radius: 10px;
     border: 1px solid #252525;
     box-shadow: 1px 1px 5px;
@@ -125,41 +142,36 @@ body {
     box-shadow: 0px 0px;
 }
 
-#projHeader{
-    display: flex;
-    justify-content: center;
+@media (max-width:800px){
+    .infoPreview{
+        flex-direction: column;
+        align-items: center;
+    }
+    .previewAbout, .previewContact{
+        margin-top: 10px;
+        width: 80%;
+    }
+    .projectHeader{
+            flex-direction: column;
+    }
+    .projectHeader a, h1{
+        align-items: center;
+        font-size: medium;
+    }
+    .projButton{
+        display: none;
+    }
 }
 
-.projItem{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1%;
+@media (max-width:1100px){
+    #pButtonLeft{
+        left: 50%;
+        transform: translate(-46.5vw);
+    }
 
+    #pButtonRight{
+        right: 50%;
+        transform: translate(46.5vw);
+    }
 }
 
-.projRow{
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 1%;
-}
-
-.projContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 500px;
-}
-.projDescription{
-
-    background-color: #f1f1f1;
-    height: 50%;
-    width: 70%;
-}
-
-#projItem{
-    margin: 10px;
-    box-shadow: 1px 1px 5px grey;
-    height: 50%;
-    width: 70%;
-}
