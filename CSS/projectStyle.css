@@ -91,3 +91,27 @@ body {
 .projDescription a:hover{
     background-color: rgb(0, 128, 157);
 }
+
+.secretPopup{
+    display: none;
+    position: absolute;
+    background-color: red;
+    height: 100px;
+    width: 210px;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -105px ;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+.secretPopup input{
+    margin-top: 2px;
+}
+
+.secretPopup button{
+    margin-top: 2px;
+    height: 20px;
+    width: 50px;
+}

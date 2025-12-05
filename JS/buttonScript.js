@@ -57,3 +57,13 @@ function changeImg(chng){
 }
 
 setInterval(() => {rotateImage(1)},10000);
+
+function openSecretPop(){
+    alert('Confidential Information Please Enter the Code.');
+    document.getElementsByClassName("secretPopup")[0].style.display = 'inline';
+}
+
+function closeSecretPop(){
+    alert('Access Denied');
+    document.getElementsByClassName("secretPopup")[0].style.display = 'none';
+} 

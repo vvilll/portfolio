@@ -74,8 +74,13 @@
             <div class = "projDescription">
                 <h2>Buffer Overflow</h2>
                 <p>A exercise and write up on the exploitation of a C program that contains a buffer overflow vulnerabilty.</p>
-                <a onclick="alert('This is classified information')">Learn More</a>
+                <a onclick="openSecretPop()">Learn More</a>
             </div>
         </div>
+    </div>
+    <div class="secretPopup">
+        <label for="">KEY:</label><br>
+        <input type="text" id="key"><br>
+        <button class="dummyButton" onclick="closeSecretPop()">Enter</button>
     </div>
 </body>
